@@ -1,0 +1,25 @@
+exercici 1
+
+A partir dels documents adjunts (estructura i dades), crea una base de dades amb MySQL. Mostra les característiques principals de l'esquema creat i explica les diferents taules i variables que hi ha.
+
+
+
+Aquesta base de dades consisteix en 5 taules relacionades amb el cinema on s'interrelacionen paràmetres com els actors (amb les seves respectives dates de neixement i de mort,
+els rols que han tingut en cada pel·lícula, país...), el gènere de les pel·lícules i el seu format.
+
+
+
+
+Les 5 taules i les seves respectives variables són: tb_genre(genre_id, genre_name). genre_id -> primary key
+
+
+								    tb_movie(movie_id, movie_title, movie_date, movie_format, movie_genre_id). movie_id -> primary key
+
+
+								    tb_role(role_id, role_name). role_id -> primary key
+
+
+								    tb_person(person_id, person_name, person_country, person_dob, person_dod, person_parent_id). movie_id, genre_id, role_id -> foreig keys
+
+
+								    tb_movie_person(movie_id, person_id, role_id, movie_award_ind). person_id -> primary key
